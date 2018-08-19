@@ -1,12 +1,12 @@
 {
-  "name": "ngx-perfect-scrollbar",
+  "name": "ngx-ie-perfect-scrollbar",
   "description": "Angular wrapper library for Perfect Scrollbar",
   "bugs": "https://github.com/Shay12tg/ngx-perfect-scrollbar/issues",
   "license": "MIT",
   "version": "6.3.0",
-  "main": "./bundles/ngx-perfect-scrollbar.umd.js",
-  "module": "./dist/ngx-perfect-scrollbar.es5.js",
-  "typings": "./dist/ngx-perfect-scrollbar.d.ts",
+  "main": "./bundles/ngx-ie-perfect-scrollbar.umd.js",
+  "module": "./dist/ngx-ie-perfect-scrollbar.es5.js",
+  "typings": "./dist/ngx-ie-perfect-scrollbar.d.ts",
   "tslint": {
     "extends": "./tslint.json"
   },

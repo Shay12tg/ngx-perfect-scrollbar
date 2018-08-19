@@ -11,8 +11,8 @@
     "annotateForClosureCompiler": true,
     "enableResourceInlining": true,
     "fullTemplateTypeCheck": true,
-    "flatModuleId": "ngx-perfect-scrollbar",
-    "flatModuleOutFile": "ngx-perfect-scrollbar.js",
+    "flatModuleId": "ngx-ie-perfect-scrollbar",
+    "flatModuleOutFile": "ngx-ie-perfect-scrollbar.js",
     "skipTemplateCodegen": true,
     "strictInjectionParameters": true,
     "strictMetadataEmit": true

@@ -38,7 +38,7 @@
       'ts': 'npm:plugin-typescript/lib/plugin.js',
       'typescript': 'npm:typescript/lib/typescript.js',
       'perfect-scrollbar': 'npm:perfect-scrollbar/dist/perfect-scrollbar.common.js',
-      'ngx-perfect-scrollbar': 'npm:ngx-perfect-scrollbar/bundles/ngx-perfect-scrollbar.umd.js'
+      'ngx-ie-perfect-scrollbar': 'npm:ngx-ie-perfect-scrollbar/bundles/ngx-ie-perfect-scrollbar.umd.js'
     },
     packages: {
       'app': {
