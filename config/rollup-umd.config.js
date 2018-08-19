@@ -22,7 +22,8 @@ const globals = {
   'rxjs/operator': 'Rx.Observable.prototype',
   'rxjs/operators': 'Rx.Observable.prototype',
 
-  'perfect-scrollbar': 'PerfectScrollbar'
+  'perfect-scrollbar': 'PerfectScrollbar',
+  'ie-perfect-scrollbar': 'PerfectScrollbar'
 };
 
 const external = Object.keys(globals);
