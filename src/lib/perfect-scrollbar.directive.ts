@@ -174,10 +174,10 @@ export class PerfectScrollbarDirective implements OnInit, OnDestroy, DoCheck, On
 
   public geometry(prefix: string = 'scroll'): Geometry {
     return new Geometry(
-      this.elementRef.nativeElement[prefix + 'Left'],
-      this.elementRef.nativeElement[prefix + 'Top'],
-      this.elementRef.nativeElement[prefix + 'Width'],
-      this.elementRef.nativeElement[prefix + 'Height']
+      Math.floor(this.elementRef.nativeElement[prefix + 'Left']),
+      Math.floor(this.elementRef.nativeElement[prefix + 'Top']),
+      Math.floor(this.elementRef.nativeElement[prefix + 'Width']),
+      Math.floor(this.elementRef.nativeElement[prefix + 'Height'])
     );
   }
 
@@ -189,8 +189,8 @@ export class PerfectScrollbarDirective implements OnInit, OnDestroy, DoCheck, On
       );
     } else {
       return new Position(
-        this.elementRef.nativeElement.scrollLeft,
-        this.elementRef.nativeElement.scrollTop
+        Math.floor(this.elementRef.nativeElement.scrollLeft),
+        Math.floor(this.elementRef.nativeElement.scrollTop)
       );
     }
   }
@@ -264,9 +264,9 @@ export class PerfectScrollbarDirective implements OnInit, OnDestroy, DoCheck, On
       const scrollerPos = this.elementRef.nativeElement.getBoundingClientRect();
 
       if (this.elementRef.nativeElement.classList.contains('ps--active-x')) {
-        const currentPos = this.elementRef.nativeElement['scrollLeft'];
+        const currentPos = Math.floor(this.elementRef.nativeElement['scrollLeft']);
 
-        const position = elementPos.left - scrollerPos.left + currentPos;
+        const position = Math.floor(elementPos.left) - Math.floor(scrollerPos.left) + currentPos;
 
         this.animateScrolling('scrollLeft', position + (offset || 0), speed);
       }
@@ -274,7 +274,7 @@ export class PerfectScrollbarDirective implements OnInit, OnDestroy, DoCheck, On
       if (this.elementRef.nativeElement.classList.contains('ps--active-y')) {
         const currentPos = this.elementRef.nativeElement['scrollTop'];
 
-        const position = elementPos.top - scrollerPos.top + currentPos;
+        const position = Math.floor(elementPos.top) - Math.floor(scrollerPos.top) + currentPos;
 
         this.animateScrolling('scrollTop', position + (offset || 0), speed);
       }
