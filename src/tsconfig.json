@@ -8,6 +8,7 @@
     "rootDir": "."
   },
   "angularCompilerOptions": {
+    "noImplicitAny": false,
     "annotateForClosureCompiler": true,
     "enableResourceInlining": true,
     "fullTemplateTypeCheck": true,

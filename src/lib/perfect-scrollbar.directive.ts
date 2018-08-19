@@ -1,32 +1,3 @@
-declare namespace PerfectScrollbar {
-  export interface Options {
-    handlers?: string[];
-    maxScrollbarLength?: number;
-    minScrollbarLength?: number;
-    scrollingThreshold?: number;
-    scrollXMarginOffset?: number;
-    scrollYMarginOffset?: number;
-    suppressScrollX?: boolean;
-    suppressScrollY?: boolean;
-    swipeEasing?: boolean;
-    useBothWheelAxes?: boolean;
-    wheelPropagation?: boolean;
-    wheelSpeed?: number;
-  }
-}
-
-export declare class PerfectScrollbar {
-  constructor(element: string | HTMLElement, options?: PerfectScrollbar.Options);
-
-  reach: { x: 'start' | 'end' | null, y: 'start' | 'end' | null };
-
-  update(): void;
-  destroy(): void;
-
-}
-
-require('../../node_modules/ie-perfect-scrollbar/dist/js/perfect-scrollbar');
-
 import ResizeObserver from 'resize-observer-polyfill';
 
 import { Subject, fromEvent } from 'rxjs';
@@ -43,6 +14,8 @@ import { Geometry, Position } from './perfect-scrollbar.interfaces';
 
 import { PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfig, PerfectScrollbarConfigInterface,
   PerfectScrollbarEvent, PerfectScrollbarEvents } from './perfect-scrollbar.interfaces';
+
+import PerfectScrollbar from '../perfect-scrollbar/src/index';
 
 @Directive({
   selector: '[perfectScrollbar]',
